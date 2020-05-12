@@ -1,7 +1,7 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -13,24 +13,23 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +49,154 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	// border: 2px solid blue;
 }
 
-html, body {
-    height: 100%;
+// @main-color: #00CED1;
+@main-color: #483D8B;
+@heading-color: #8B0000;
+@main-font: 'DM Mono', monospace;
+@heading-font: 'Lato', sans-serif;
+
+.center(){
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.tip(){
+	display: flex;
+	justify-content: space-between;
+}
+// html,
+body {
+	height: 100%;
+	background-color: #FFB6C1;
+	font-family: @main-font;
+	color: @main-color;
 }
 
+h1, h2 {
+	font-size: 2rem;
+	font-family: @heading-font;
+	color: @heading-color;
+}
+
+// header #title {
+// display: flex;
+// #title h1 nav {
+// justify-content: space-evenly;
+// align-items: center;
+
+header nav{
+	width:100%;
+	display:flex;
+	justify-content: space-evenly;
+
+	@media( max-width: 500px ) {
+		background-color: #FFF;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.links {
+	width:60%;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	a {
+		padding: 10px;
+		.tip();
+	}
+}
+
+#top {
+
+	img {
+		width: 25%;
+	}
+	button {
+		font-size: 1.5rem;
+		padding: 5px 10px;
+		margin: 10px 10px;
+	}
+
+	button:hover {
+		background-color: blue;
+		color: #000;
+		transition-duration: 5s;
+		// background-color: #000;
+		// color: #FFF;
+	}
+}
+
+#skills {
+	.tip();
+	// display: flex;
+	// justify-content: space-between;
+
+	div{
+		width: 50%;
+	}
+
+	p {
+		width: 70%;
+		flex-wrap: wrap;
+	}
+
+	@media( max-width: 500px ) {
+		background-color: #FFF;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+table {
+	width: 100%;
+
+	th {
+		font-weight: bold;
+	}
+
+	th, td {
+		padding: 15px;
+		text-align: left;
+		border-bottom: 1px solid black;
+	}
+}
+
+
+
+footer{
+	background-color:#E0FFFF;
+	padding: 3% 0;
+	text-align:center;
+
+	div{
+		.center();
+	}
+
+	p {
+		text-align: center;
+		padding: 5px;
+		margin: 20px 20px;
+	}
+}
+
+form{
+	width:80%;
+}
+
+input, label, textarea{
+	width:100%;
+	margin:4% 0;
+
+	input, textarea{
+		border:none;
+		border-bottom:3px solid #00CED1;
+		background-color:#E0FFFF;
+	}
+}

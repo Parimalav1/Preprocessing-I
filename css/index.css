@@ -1,1 +1,243 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 2;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #FFB6C1;
+  font-family: 'DM Mono', monospace;
+  color: #483D8B;
+}
+h1,
+h2 {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  color: #8B0000;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.links {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links a {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#top img {
+  width: 25%;
+}
+#top button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin: 10px 10px;
+}
+#top button:hover {
+  background-color: blue;
+  color: #000;
+  transition-duration: 5s;
+}
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+#skills div {
+  width: 50%;
+}
+#skills p {
+  width: 70%;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  #skills {
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+table {
+  width: 100%;
+}
+table th {
+  font-weight: bold;
+}
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+footer {
+  background-color: #E0FFFF;
+  padding: 3% 0;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  padding: 5px;
+  margin: 20px 20px;
+}
+form {
+  width: 80%;
+}
+input,
+label,
+textarea {
+  width: 100%;
+  margin: 4% 0;
+}
+input input,
+label input,
+textarea input,
+input textarea,
+label textarea,
+textarea textarea {
+  border: none;
+  border-bottom: 3px solid #00CED1;
+  background-color: #E0FFFF;
+}
