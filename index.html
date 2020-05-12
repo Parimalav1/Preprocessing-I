@@ -9,11 +9,97 @@
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
-</body>
-</html>
+  <header>
+    <nav>
+      <div class="title">
+        <h1>My Resume</h1>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <section id="top">
+    <div>
+      <img src="https://images.unsplash.com/photo-1587614382504-91b93ec4a43b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+    </div>
+    <div class="name">
+      <h1>Parimala Vemula - Web Dev</h1>
+      <p>Technology is my jam!</p>
+    </div>
+    <div class="name">
+      <p>Occasionally I have to work on side projects. If you're interested, let me know by signing up on this website.</p>
+      <button id="sign">Lets Team Up</button>
+      <!-- <button type="submit">Send</button> -->
+    </div>
+  </section>
+  <section id="skills">
+    <!-- <div class="stuff"> -->
+      <div>
+        <h2>Listen up</h2>
+        <p>While it's not hard to get a job as a web developer, it's hard to get a cake job.
+          You know, high pay, flexible hours, remote work. Unicorn company stuff.
+          For those jobs, you'll need a resume as rare as Thor's hammer and three times as powerful.
+          How do you write a resume like that?</p>
+      </div>
+      <div>
+        <h2>Stuff I'm good at</h2>
+        <p>Bowling</p>
+        <p>Coding</p>
+        <p>Playing board games</p>
+        <p>Using bootstrap grid</p>
+        <p>Hiking, gardening</p>
+      </div>
+      <!-- </div -->
+    </section>
+    <section id="work">
+      <h2>Work History</h2>
+      <div>
+        <table>
+          <tr>
+            <th>Yrs</th> <th>Company</th>  <th>Title</th> <th>Tech Used</th>
+          </tr>
+          <tr>
+            <td>1</td> <td>Apple</td> <td>Software engineer</td> <td>Swift</td>
+          </tr>
+          <tr>
+            <td>2</td> <td>Microsoft</td> <td>Computer scientist</td> <td>.NET</td>
+          </tr>
+          <tr>
+            <td>3</td> <td>Amazon</td> <td>Dev ops</td> <td>AWS</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+<!--
+            <h3>Yrs Company Title Tech Used</h3>
+            <p>Apple Software engineer Swift</p>
+            <p>Microsoft Computer scientist .NET</p>
+            <p>Amazon Dev ops AWS</p>
+-->
+    <footer>
+      <div>
+        <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+          <label for="phonenumber">Phonenumber</label>
+          <input type="phonenumber" name="phonenumber">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+          <label for="address">Address</label>
+          <textarea name="address"></textarea>
+        </form>
+      </div>
+      <div>
+        <p class="copyright">&copy; Awesomeness 2018</p>
+      </div>
+    </footer>
+  </body>
+  </html>
